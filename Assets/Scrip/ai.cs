@@ -1,22 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class ai : MonoBehaviour
 {
-    public NavMeshAgent enemy;
-    public Transform player;
-    
-    void Start()
+    [SerializeField] private Transform movepositionTransform;
+
+    private NavMeshAgent NavMeshAgent;
+  private void Awake()
     {
-        
+        NavMeshAgent = GetComponent<NavMeshAgent>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-
-        enemy.SetDestination(player.position);
+        NavMeshAgent.destination = movepositionTransform.position;
     }
 }
