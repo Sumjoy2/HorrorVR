@@ -222,10 +222,11 @@ Transform:
   m_GameObject: {fileID: 41643285}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 85.4}
+  m_LocalPosition: {x: 0, y: -17.25, z: 80.46}
   m_LocalScale: {x: 1, y: 1.55, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1448519533}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &779696718
@@ -327,7 +328,7 @@ Transform:
   m_GameObject: {fileID: 779696718}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.08, y: 2.63, z: 95.5}
+  m_LocalPosition: {x: -0.08, y: -17.25, z: 95.5}
   m_LocalScale: {x: 2, y: 0.7, z: 1.2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -424,6 +425,7 @@ GameObject:
   - component: {fileID: 963830820}
   - component: {fileID: 963830819}
   - component: {fileID: 963830818}
+  - component: {fileID: 963830821}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -439,8 +441,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963830816}
   m_LocalRotation: {x: 0.00018925531, y: -0.015278018, z: 0.0105393715, w: -0.9998278}
-  m_LocalPosition: {x: 0, y: 0, z: -179.28}
-  m_LocalScale: {x: 0.09168, y: 0.11745269, z: 0.22}
+  m_LocalPosition: {x: 0, y: 0, z: -179.92}
+  m_LocalScale: {x: 0.03445976, y: 0.055739522, z: 0.22}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1147802860}
@@ -448,7 +450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -179.997, y: -178.249, z: -181.208}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.34, y: -72.28}
+  m_AnchoredPosition: {x: -6, y: -69.02}
   m_SizeDelta: {x: 47.6183, y: 13.4236}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &963830818
@@ -494,7 +496,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 963830819}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 963830821}
+        m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FlatFirst
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &963830819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,6 +547,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963830816}
   m_CullTransparentMesh: 1
+--- !u!114 &963830821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963830816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b830f6d295c77a4dad32443d7ee0ee0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1147802859
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,7 +616,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 'hello
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -766,7 +794,7 @@ Transform:
   m_GameObject: {fileID: 1402833455}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.25, z: 0}
+  m_LocalPosition: {x: 0, y: -18.9, z: 0}
   m_LocalScale: {x: 200, y: 1, z: 200}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -858,12 +886,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448519530}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.55, z: 0}
+  m_LocalScale: {x: 1, y: 0.64516133, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 41643289}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1448519534
 MonoBehaviour:
@@ -1133,7 +1161,6 @@ RectTransform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1448519533}
   - {fileID: 1725979858}
   - {fileID: 892708345}
   - {fileID: 41643289}
