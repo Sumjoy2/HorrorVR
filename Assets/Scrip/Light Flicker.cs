@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LightFlicker : MonoBehaviour
 {
+
+    public Lever lightSwitch;
     public float flickerInrensity = 0.2f;
     public float flickerspersecond = 3.0f;
     public float speedRandomness = 1.0f;
