@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 8803730648562967419}
   - component: {fileID: 1324878244711837676}
   - component: {fileID: 7610015682618952130}
+  - component: {fileID: 6866637995381774134}
   - component: {fileID: 2021461275664461427}
   - component: {fileID: 7459004250930006131}
-  m_Layer: 6
+  - component: {fileID: 1627480706860930031}
+  m_Layer: 0
   m_Name: Lever
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,6 +87,33 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &6866637995381774134
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467717657049720817}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 110
+  m_CollisionDetection: 0
 --- !u!65 &2021461275664461427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -209,7 +238,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Handle: {fileID: 8843209520316638243}
-  m_Value: 1
+  m_Value: 0
   m_LockToValue: 1
   m_MaxAngle: 40
   m_MinAngle: -40
@@ -219,6 +248,21 @@ MonoBehaviour:
   m_OnLeverDeactivate:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1627480706860930031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467717657049720817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fee97e981c7b8f40980774af1eb2cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightsOn: 0
+  lights: []
+  lever: {fileID: 7459004250930006131}
 --- !u!1 &3733936402115360992
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,7 +275,7 @@ GameObject:
   - component: {fileID: 2641239591375525478}
   - component: {fileID: 2605415307919935248}
   - component: {fileID: 4096638102431850045}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -332,7 +376,7 @@ GameObject:
   - component: {fileID: 7896097547786690395}
   - component: {fileID: 2340560240076008671}
   - component: {fileID: 9000631991503790490}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -464,7 +508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8843209520316638243}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -479,7 +523,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6600995906165221781}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.34202015, y: 0, z: 0, w: 0.9396927}
+  m_LocalRotation: {x: -0.34202015, y: 0, z: 0, w: 0.9396927}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -496,7 +540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7224085768193102795}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,7 +556,7 @@ Transform:
   m_GameObject: {fileID: 7025699264158298084}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.578, y: -0.007, z: -0.086}
+  m_LocalPosition: {x: 0.583, y: -0.007, z: -0.086}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -531,7 +575,7 @@ GameObject:
   - component: {fileID: 3802928056058367950}
   - component: {fileID: 1639153037633973489}
   - component: {fileID: 5610476200856783787}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BoxTestLever
   m_TagString: Untagged
   m_Icon: {fileID: 0}
