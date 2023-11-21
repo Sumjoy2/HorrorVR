@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Anchor
   - Light
+  - Taggger
   layers:
   - Default
   - TransparentFX

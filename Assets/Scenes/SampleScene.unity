@@ -12093,12 +12093,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7459004250930006131, guid: b8d0b52d31dfcd90da3cfb7e1dbb5bc7, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459004250930006131, guid: b8d0b52d31dfcd90da3cfb7e1dbb5bc7, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1825262783}
     - target: {fileID: 7660145511740476294, guid: b8d0b52d31dfcd90da3cfb7e1dbb5bc7, type: 3}
       propertyPath: m_Name
       value: BoxTestLever
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843209520316638243, guid: b8d0b52d31dfcd90da3cfb7e1dbb5bc7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.34202015
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18537,7 +18545,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 9.1835e-41, y: 5.877472e-37, z: 1.7219156e-38, w: NaN}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.3e-44, z: 3.017e-42, w: 4.775446e-39}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
