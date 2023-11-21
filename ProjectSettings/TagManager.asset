@@ -7,6 +7,7 @@ TagManager:
   - Anchor
   - Light
   - Taggger
+  - Keycard
   layers:
   - Default
   - TransparentFX
